@@ -191,8 +191,8 @@
 				TargetAttributes = {
 					174015511DFE0B1500F544D8 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 33CF54V95Y;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VY4FR2X9W5;
+						ProvisioningStyle = Manual;
 					};
 					522E8C671DFDFED1002552B2 = {
 						CreatedOnToolsVersion = 8.1;
@@ -347,12 +347,14 @@
 		1740155B1DFE0B1500F544D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 33CF54V95Y;
+				DEVELOPMENT_TEAM = VY4FR2X9W5;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-connect.PushNotifications1.NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5bec4acf-fb00-412e-a07d-c4e1534cd966";
+				PROVISIONING_PROFILE_SPECIFIER = PushNotifictinos1NotificationService;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -361,12 +363,14 @@
 		1740155C1DFE0B1500F544D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 33CF54V95Y;
+				DEVELOPMENT_TEAM = VY4FR2X9W5;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-connect.PushNotifications1.NotificationService";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5bec4acf-fb00-412e-a07d-c4e1534cd966";
+				PROVISIONING_PROFILE_SPECIFIER = PushNotifictinos1NotificationService;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
