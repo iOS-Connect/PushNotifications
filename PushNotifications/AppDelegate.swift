@@ -8,18 +8,25 @@
 
 import UIKit
 import UserNotifications
+import PusherSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let pusher = Pusher(key: "5637213a207393e799e6")
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
-            // actions based on whether notifications were authorized or not
+        if #available(iOS 10.0, *) {
+            pusher.connect()
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+                // actions based on whether notifications were authorized or not
+            }
+        } else {
+            // Fallback on earlier versions
         }
+
         application.registerForRemoteNotifications()
         return true
     }
