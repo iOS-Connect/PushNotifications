@@ -196,8 +196,8 @@
 					};
 					522E8C671DFDFED1002552B2 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 33CF54V95Y;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = VY4FR2X9W5;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -472,11 +472,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
-				DEVELOPMENT_TEAM = 33CF54V95Y;
+				DEVELOPMENT_TEAM = VY4FR2X9W5;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-connect.PushNotifications1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d79d5151-a6a7-4472-a7e7-8e1e38d978ee";
+				PROVISIONING_PROFILE_SPECIFIER = PushNotifications1DevProfile;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -488,11 +490,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
-				DEVELOPMENT_TEAM = 33CF54V95Y;
+				DEVELOPMENT_TEAM = VY4FR2X9W5;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-connect.PushNotifications1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d79d5151-a6a7-4472-a7e7-8e1e38d978ee";
+				PROVISIONING_PROFILE_SPECIFIER = PushNotifications1DevProfile;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -507,6 +511,7 @@
 				1740155C1DFE0B1500F544D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		522E8C631DFDFED1002552B2 /* Build configuration list for PBXProject "PushNotifications" */ = {
 			isa = XCConfigurationList;
