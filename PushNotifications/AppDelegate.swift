@@ -10,11 +10,13 @@ import UIKit
 import UserNotifications
 import PusherSwift
 
+let pusherKey = "5637213a207393e799e6"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let pusher = Pusher(key: "5637213a207393e799e6")
+    let pusher = Pusher(key: pusherKey)
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if #available(iOS 10.0, *) {
