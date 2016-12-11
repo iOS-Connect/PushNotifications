@@ -50,7 +50,7 @@ class PushManager {
     }
 
     func registrationSuccessFull(token: Data) {
-        pusher.nativePusher().register(deviceToken: deviceToken)
+        pusher.nativePusher().register(deviceToken: token)
         pusher.nativePusher().subscribe(interestName: "donuts")
     }
 }
