@@ -23,7 +23,7 @@ class NotificationService: UNNotificationServiceExtension {
             if let urlString = notificationData["attachment-url"], let fileUrl = URL(string: urlString) {
                 // Download the attachment
                 URLSession.shared.downloadTask(with: fileUrl) { (location, response, error) in
-                    
+                    print("Downloaded content")
                     if let location = location {
                         // Move temporary file to remove .tmp extension
                         let tmpDirectory = NSTemporaryDirectory()
@@ -39,6 +39,7 @@ class NotificationService: UNNotificationServiceExtension {
                     // Serve the notification content
                     self.contentHandler!(self.bestAttemptContent!)
                     }.resume()
+                print("Starting download")
             }
         }
     }
